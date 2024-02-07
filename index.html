@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Timer 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./src/main.js" defer></script>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div class="section">
+        <section id="timer">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+
+        <section id="controls">
+          <button data-action="toggleRunning" class="ph-bold ph-play-circle">
+            <span class="sr-only">Iniciar o contador</span>
+          </button>
+          <button data-action="stop" class="ph-bold ph-stop-circle">
+            <span class="sr-only">Pausar o contador</span>
+          </button>
+          <button
+            data-action="setmore"
+            id="setmore"
+            class="ph-bold ph-plus-circle"
+          >
+            <span class="sr-only">Aumentar 5 minutos</span>
+          </button>
+          <button
+            data-action="setless"
+            id="setless"
+            class="ph-bold ph-minus-circle"
+          >
+            <span class="sr-only"> Diminuir 5 minutos </span>
+          </button>
+        </section>
+      </div>
+
+      <div class="card">
+        <section id="card">
+          <div class="column1">
+            <button id="music" class="ph-light ph-tree">
+              <span class="sr-only">Floresta</span>
+            </button>
+            <button
+              style="background-color: #02799d"
+              id="music"
+              class="ph-light ph-cloud-snow"
+            >
+              <span class="sr-only">Chuva</span>
+            </button>
+          </div>
+
+          <button id="music" class="ph-light ph-storefront">
+            <span class="sr-only">Cafeteria</span>
+          </button>
+          <button id="music" class="ph-light ph-flame">
+            <span class="sr-only">Lareira</span>
+          </button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
