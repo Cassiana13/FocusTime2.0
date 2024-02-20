@@ -1,6 +1,5 @@
 import state from "./state.js";
 import * as el from "./elements.js";
-import * as actions from "./actions.js";
 
 export function countdown() {
   if (!state.isRunning) {
